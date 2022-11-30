@@ -1,0 +1,59 @@
+.wrapper {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.searchField {
+		width: 50%;
+		padding: 10px;
+		font-size: 16px;
+		border: 2px solid #39c5fc;
+		border-radius: 5px;
+	}
+
+	.close {
+		position: relative;
+		z-index: 1;
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		cursor: pointer;
+
+		&:before {
+			content: "+";
+			position: absolute;
+			top: -8px;
+			left: 6px;
+			z-index: 2;
+			line-height: 1;
+			font-size: 50px;
+			color: #39c5fc;
+			transform: rotate(45deg);
+			transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			border-radius: 100%;
+			background: #2fa2cf;
+			transform: scale(0.01);
+			transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+		}
+
+		&:hover:after {
+			transform: scale(1);
+		}
+
+		&:hover:before {
+			color: #fff;
+			transform: scale(0.8) rotate(45deg);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.wrapper {
+	padding: 10px 0;
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	border-bottom: 1px solid #000;
+
+	.input {
+		width: 100%;
+		font-size: 20px;
+		//color: rgb(82, 82, 82);
+	}
+
+	.button {
+		padding: 5px 15px;
+		color: #fff;
+		border-radius: 5px;
+		background: #39c5fc;
+		transition: 0.3s all;
+		text-transform: uppercase;
+
+		&:hover {
+			background: #2fa2cf;
+		}
+	}
+}

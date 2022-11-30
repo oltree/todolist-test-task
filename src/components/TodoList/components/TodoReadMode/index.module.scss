@@ -1,0 +1,44 @@
+.wrapper {
+	color: rgb(82, 82, 82);
+
+	.task {
+		padding: 10px 0;
+		margin-bottom: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid #000;
+
+		.text {
+			font-size: 20px;
+		}
+
+		.buttons {
+			display: flex;
+			gap: 10px;
+
+			.button {
+				padding: 5px 15px;
+				color: #fff;
+				border-radius: 5px;
+				background: #39c5fc;
+				transition: 0.3s all;
+				text-transform: uppercase;
+
+				&:hover {
+					background: #2fa2cf;
+				}
+			}
+		}
+	}
+
+	.tags {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		.tag {
+			font-size: 14px;
+		}
+	}
+}
